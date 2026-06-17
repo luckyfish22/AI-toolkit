@@ -27,5 +27,8 @@ Thumbs.db
 *.log
 logs/
 
+# Claude Code 本地配置（含权限规则，不可公开）
+.claude/
+
 # Electron
 out/

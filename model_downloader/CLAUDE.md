@@ -110,7 +110,7 @@ claude -p "读取 D:/AAA_study/my_code_file/my_cc/model_downloader/download_task
 
 ## 前置依赖
 
-- **Claude Code CLI**：已安装（`C:\Users\31899\AppData\Roaming\npm\claude`）
+- **Claude Code CLI**：已通过 npm 全局安装
 - **huggingface-cli**：`pip install huggingface_hub`
 - **Clash Verge**：运行中，代理端口 `7897`
 - **Git LFS**：`git lfs install`（某些模型可能需要）
