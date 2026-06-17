@@ -1,0 +1,41 @@
+{
+  "name": "claude-chat-viewer",
+  "version": "1.0.0",
+  "description": "浏览和管理 Claude Code 本地聊天记录的桌面应用",
+  "main": "server/main.js",
+  "scripts": {
+    "dev": "concurrently -k \"vite\" \"wait-on http://localhost:5173 && node server/main.js\"",
+    "build": "vite build",
+    "start": "node server/main.js",
+    "open": "start http://localhost:3000"
+  },
+  "keywords": [
+    "claude",
+    "chat",
+    "viewer",
+    "electron"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "fuse.js": "^7.4.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-markdown": "^10.1.0",
+    "rehype-highlight": "^7.0.2",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "@vitejs/plugin-react": "^6.0.2",
+    "autoprefixer": "^10.5.0",
+    "concurrently": "^10.0.3",
+    "cross-env": "^10.1.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16",
+    "wait-on": "^9.0.10"
+  }
+}

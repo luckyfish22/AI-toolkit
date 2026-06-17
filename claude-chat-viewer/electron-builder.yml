@@ -1,0 +1,16 @@
+appId: com.claude-chat-viewer.app
+productName: Claude Chat Viewer
+directories:
+  output: release
+  buildResources: resources
+files:
+  - dist/**/*
+  - electron/**/*
+  - package.json
+win:
+  target: nsis
+  icon: resources/icon.png
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "highlight.js/styles/github.css";
+
+/* ============================================================
+   暖米色主题
+   ============================================================ */
+@theme {
+  --color-warm-bg: #faf8f5;
+  --color-warm-surface: #ffffff;
+  --color-warm-sidebar: #f5f1ea;
+  --color-warm-hover: #efe9df;
+  --color-warm-active: #e8e0d3;
+  --color-warm-border: #e8e2d8;
+  --color-warm-text: #1a1a1a;
+  --color-warm-muted: #8c8580;
+  --color-warm-accent: #c46b4a;
+  --color-warm-accent-light: #faf0ea;
+  --color-user-msg: #f0ebe2;
+  --color-code-bg: #f8f5f0;
+}
+
+/* ============================================================
+   全局
+   ============================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Inter', -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  font-size: 15px;
+  color: #1a1a1a;
+  background: #faf8f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d9d3c8; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #c4bdb0; }
+
+::selection { background: #faf0ea; color: #1a1a1a; }
+
+.hljs { background: #f8f5f0 !important; border-radius: 10px; padding: 1rem !important; font-size: 13px !important; }
